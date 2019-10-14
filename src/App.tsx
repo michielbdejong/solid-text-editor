@@ -1,5 +1,6 @@
 import React from 'react';
 import { LoggedOut, LoginButton, LoggedIn } from '@solid/react';
+import Editor from './components/Editor';
 
 const App: React.FC = () => {
   return <>
@@ -10,7 +11,7 @@ const App: React.FC = () => {
       </section>
     </LoggedOut>
     <LoggedIn>
-      UI goes here
+    <Editor></Editor>
     </LoggedIn>
   </>;
 }
